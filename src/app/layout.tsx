@@ -7,15 +7,15 @@ import { FilmGrain } from '@/components/effects/FilmGrain'
 import { ParticleSmoke } from '@/components/effects/ParticleSmoke'
 import { defaultSEO } from '@/utils/seo'
 import './globals.scss'
-import '@/../styles/amnesia-theme.scss'
-import '@/../styles/responsive/_mobile.scss'
-import '@/../styles/responsive/_tablet.scss'
-import '@/../styles/responsive/_desktop.scss'
-import '@/../styles/components/_modal.scss'
+import '../../styles/amnesia-theme.scss'
+import '../../styles/responsive/_mobile.scss'
+import '../../styles/responsive/_tablet.scss'
+import '../../styles/responsive/_desktop.scss'
+import '../../styles/components/_modal.scss'
 
 export const metadata: Metadata = {
   ...defaultSEO,
-  metadataBase: new URL('https://vovlichenkos.github.io')
+  metadataBase: new URL('https://Yueuddu.github.io/amnesia-portfolio')
 }
 
 export default function RootLayout({
