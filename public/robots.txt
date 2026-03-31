@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vovlichenkos.github.io/amnesia-portfolio/sitemap.xml

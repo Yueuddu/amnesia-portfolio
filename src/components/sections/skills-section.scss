@@ -1,0 +1,74 @@
+@import '../../app/variables';
+
+.skills-section {
+  padding: 80px 20px;
+  position: relative;
+  z-index: $z-content;
+  
+  &__title {
+    font-size: 2.5rem;
+    color: $color-accent;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  &__grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 40px;
+  }
+  
+  &__category {
+    background: rgba($color-bg-secondary, 0.6);
+    border: 1px solid rgba($color-accent-dark, 0.3);
+    padding: 30px;
+    transition: all $transition-medium;
+    
+    &:hover {
+      border-color: rgba($color-accent, 0.5);
+      box-shadow: 0 0 20px rgba($color-accent, 0.1);
+    }
+    
+    &-title {
+      font-size: 1.3rem;
+      color: $color-accent;
+      margin-bottom: 20px;
+      font-family: 'MedievalSharp', cursive;
+      letter-spacing: 0.08em;
+    }
+  }
+  
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  &__tag {
+    padding: 8px 16px;
+    background: rgba($color-bg-primary, 0.8);
+    border: 1px solid rgba($color-accent-dark, 0.4);
+    color: $color-text-primary;
+    font-size: 0.95rem;
+    transition: all $transition-fast;
+    animation: fadeIn 0.5s ease backwards;
+    
+    &:hover {
+      border-color: $color-accent;
+      color: $color-accent;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,40 @@
+// Цветовая палитра Amnesia
+$color-bg-primary: #0a0a0a;
+$color-bg-secondary: #111111;
+$color-bg-tertiary: #1a1a1a;
+
+$color-text-primary: #c9b896;
+$color-text-secondary: #8b7d6b;
+$color-text-muted: #5a5a5a;
+
+$color-accent: #d4a574;
+$color-accent-hover: #e8c49a;
+$color-accent-dark: #a67c52;
+
+$color-blood: #8b0000;
+$color-blood-bright: #cc0000;
+
+$color-candle-flame: #ff6b35;
+$color-candle-glow: rgba(255, 107, 53, 0.3);
+
+// Шрифты
+$font-primary: 'Cormorant Garamond', Georgia, serif;
+$font-secondary: 'MedievalSharp', cursive;
+$font-heading: 'Amnesia Style', cursive;
+
+// Размеры
+$container-max-width: 1200px;
+$menu-width: 400px;
+
+// Анимации
+$transition-slow: 0.5s ease;
+$transition-medium: 0.3s ease;
+$transition-fast: 0.15s ease;
+
+// Z-index слои
+$z-fog: 10;
+$z-vignette: 20;
+$z-film-grain: 30;
+$z-content: 40;
+$z-menu: 50;
+$z-modal: 100;

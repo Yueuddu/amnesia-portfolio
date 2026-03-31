@@ -1,0 +1,86 @@
+@import '../../src/app/variables';
+
+.amnesia-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-family: $font-secondary;
+  font-size: 1.1rem;
+  color: $color-text-primary;
+  background: transparent;
+  border: 1px solid $color-accent-dark;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all $transition-medium;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(212, 165, 116, 0.2) 50%,
+      transparent 100%
+    );
+    transition: left $transition-medium;
+  }
+  
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent-hover;
+    box-shadow: 0 0 20px rgba(212, 165, 116, 0.2);
+    
+    &::before {
+      left: 100%;
+    }
+  }
+  
+  &:active {
+    transform: scale(0.98);
+  }
+  
+  &--primary {
+    background: rgba(212, 165, 116, 0.1);
+    border-color: $color-accent;
+    
+    &:hover {
+      background: rgba(212, 165, 116, 0.2);
+    }
+  }
+  
+  &--blood {
+    border-color: $color-blood;
+    color: $color-blood-bright;
+    
+    &::before {
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(139, 0, 0, 0.3) 50%,
+        transparent 100%
+      );
+    }
+    
+    &:hover {
+      border-color: $color-blood-bright;
+      box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+    }
+  }
+  
+  &--small {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+  
+  &--large {
+    padding: 18px 40px;
+    font-size: 1.3rem;
+  }
+}

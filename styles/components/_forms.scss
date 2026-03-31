@@ -1,0 +1,69 @@
+@import '../../src/app/variables';
+
+.amnesia-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: $font-primary;
+  font-size: 1rem;
+  color: $color-text-primary;
+  background: rgba(10, 10, 10, 0.6);
+  border: 1px solid $color-accent-dark;
+  transition: all $transition-medium;
+  
+  &::placeholder {
+    color: $color-text-muted;
+    font-style: italic;
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: $color-accent;
+    box-shadow: 0 0 15px rgba(212, 165, 116, 0.2);
+    background: rgba(10, 10, 10, 0.8);
+  }
+  
+  &--error {
+    border-color: $color-blood;
+    
+    &:focus {
+      box-shadow: 0 0 15px rgba(139, 0, 0, 0.3);
+    }
+  }
+  
+  &__label {
+    display: block;
+    font-size: 0.9rem;
+    color: $color-text-secondary;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+  
+  &__error {
+    font-size: 0.85rem;
+    color: $color-blood-bright;
+    margin-top: 6px;
+  }
+}
+
+.amnesia-textarea {
+  @extend .amnesia-input;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.amnesia-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__submit {
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+}
