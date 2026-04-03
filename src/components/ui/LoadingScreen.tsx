@@ -42,7 +42,7 @@ export function LoadingScreen({ onComplete, message = 'Загрузка...' }: L
   return (
     <div className="loading-screen">
       <div className="loading-screen__content">
-        <h1 className="loading-screen__title heading-style">Papakin</h1>
+        <h1 className="loading-screen__title heading-style">Vovlichenko</h1>
         
         <div className="loading-screen__bar">
           <div 

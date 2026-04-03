@@ -24,7 +24,7 @@ export default function HomePage() {
             href: item.href,
             active: false
           }))}
-          title="Papakin"
+          title="Vovlichenko"
         />
       </div>
     )

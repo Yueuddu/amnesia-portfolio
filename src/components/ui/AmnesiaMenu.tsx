@@ -15,7 +15,7 @@ interface AmnesiaMenuProps {
   title?: string
 }
 
-export function AmnesiaMenu({ items, title = 'Papakin' }: AmnesiaMenuProps) {
+export function AmnesiaMenu({ items, title = 'Vovlichenko' }: AmnesiaMenuProps) {
   const { play } = useAudio()
 
   return (
