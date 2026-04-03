@@ -31,7 +31,7 @@ export function Navigation() {
 
       <nav className={`navigation ${isMenuOpen ? 'navigation--open' : ''}`}>
         <div className="navigation__content">
-          <h2 className="navigation__title heading-style">AMNESIA</h2>
+          <h2 className="navigation__title heading-style">Papakin</h2>
           
           <ul className="navigation__list">
             {navItems.map((item, index) => {

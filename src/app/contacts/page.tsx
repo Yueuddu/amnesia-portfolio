@@ -5,7 +5,7 @@ import './contacts-page.scss'
 
 const seo = generateSEO({
   title: 'Контакты',
-  description: 'Связаться с разработчиком. Email: suhanovv909@gmail.com, Telegram: @Pampakin, MAX: @VovlichenKOS'
+  description: 'Связаться с разработчиком Сухановым Владимиром. Email: suhanovv909@gmail.com, Telegram: @Pampakin'
 })
 
 export const metadata: Metadata = seo

@@ -1,4 +1,5 @@
 export const contacts = {
+  name: 'Суханов Владимир',
   email: 'suhanovv909@gmail.com',
   phone: '+7 (964) 943-49-52',
   telegram: '@Pampakin',

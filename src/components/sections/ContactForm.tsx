@@ -34,8 +34,8 @@ export function ContactForm() {
         
         <div className="contact-section__grid">
           <div className="contact-section__info">
-            <h3 className="contact-section__subtitle">Контакты</h3>
-            
+            <h3 className="contact-section__subtitle">{contacts.name}</h3>
+
             <div className="contact-section__details">
               <div className="contact-section__detail">
                 <span className="contact-section__label">Email:</span>
